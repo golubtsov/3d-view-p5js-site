@@ -53,7 +53,7 @@ function preload() {
     if (model1 !== null) {
         model1 = loadModel(`./static/models/${model1}`, true);
     } else {
-        alert('Выберите модель из списка справа в верхнем углу');
+        // alert('Выберите модель из списка справа в верхнем углу');
     }
 }
 
@@ -63,9 +63,13 @@ function setup() {
     cam = createCamera();
 }
 
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
+
 function draw() {
 
-    background(200);
+    background(220);
 
     cam.setPosition(camPosX, camPosY, camPos);
 

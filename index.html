@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="./static/p5js/p5.js"></script>
     <script src="./static/p5js/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/output.css">
     <title>Средство просмотра 3D</title>
   </head>
 
   <body>
     <main></main>
 
-    <div class="settings">
+    <div class="absolute top-5 right-5 w-fit p-5 gap-4 flex flex-col bg-white border rounded-lg shadow-md">
       <div>
-        <label for="list-models">Модели</label>
-        <select name="list-models" id="list-models">
+        <label for="list-models" class="block mb-2 text-sm font-medium text-gray-900">Модели</label>
+        <select name="list-models" id="list-models" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
           <option value="">Выбирите модель</option>
         </select>
       </div>
 
       <div>
-        <button id="btn-start-pos">Исходное положение</button>
+        <label for="colot" class="block mb-2 text-sm font-medium text-gray-900">Цвет модели</label>
+        <input type="color" name="colot" id="input-color" value="#77e45cee" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm block w-full">
       </div>
 
       <div>
-        <input type="color" name="colot" id="input-color" value="#77e45cee">
+        <button id="btn-start-pos" class="bg-orange-500 hover:bg-orange-400 text-white rounded-md px-3 py-2">Исходное положение</button>
       </div>
     </div>
 
