@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./static/p5js/p5.js"></script>
+    <script src="./static/p5js/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+    <title>Средство просмотра 3D</title>
+  </head>
+
+  <body>
+    <main></main>
+
+    <div class="settings">
+      <div>
+        <label for="list-models">Модели</label>
+        <select name="list-models" id="list-models">
+          <option value="">Выбирите модель</option>
+        </select>
+      </div>
+
+      <div>
+        <button id="btn-start-pos">Исходное положение</button>
+      </div>
+
+      <div>
+        <input type="color" name="colot" id="input-color" value="#77e45cee">
+      </div>
+    </div>
+
+    <script src="./static/js/getListModels.js"></script>
+    <script src="./static/js/sketch.js"></script>
+  </body>
+</html>
