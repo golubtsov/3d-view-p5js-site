@@ -14,7 +14,7 @@ let model1 = null;
 let angleX = START_ANGLE_X;
 let angleY = START_ANGLE_Y;
 
-let color = '#77e45cee';
+let color = '#3584e4';
 
 // ======================= SELECT С МОДЕЛЯМИ ============================
 
@@ -55,11 +55,12 @@ function preload() {
     } else {
         // alert('Выберите модель из списка справа в верхнем углу');
     }
+
+    console.log(color);
 }
 
 function setup() {
     createCanvas(windowWidth, windowHeight, WEBGL);
-
     cam = createCamera();
 }
 

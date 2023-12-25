@@ -12,9 +12,16 @@
   <body>
     <main></main>
 
-    <div class="absolute top-5 right-5 w-fit p-5 gap-4 flex flex-col bg-white border rounded-lg shadow-md">
+    <div id="window-open-settings" class="absolute top-5 right-5 hidden w-fit gap-4 flex flex-col bg-white border rounded-lg shadow-md">
+      <button id="btn-open-settings" class="py-2 px-4">&larr;</button>
+    </div>
+
+    <div id="window-settings" class="absolute top-5 right-5 w-fit p-5 gap-4 flex flex-col bg-white border rounded-lg shadow-md">
       <div>
-        <label for="list-models" class="block mb-2 text-sm font-medium text-gray-900">Модели</label>
+        <label for="list-models" class="flex relative mb-2 text-sm items-center font-medium text-gray-900">
+          <span class="flex flex-1">Модели</span>
+          <button id="btn-close-window-settings" class="flex text-lg">&rarr;</button>
+        </label>
         <select name="list-models" id="list-models" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
           <option value="">Выбирите модель</option>
         </select>
@@ -30,6 +37,7 @@
       </div>
     </div>
 
+    <script src="./static/js/settings.js"></script>
     <script src="./static/js/getListModels.js"></script>
     <script src="./static/js/sketch.js"></script>
   </body>
