@@ -114,5 +114,5 @@ function draw() {
 
 
 function mouseWheel(event) {
-    camPos += event.delta;
+    camPos += event.delta / 10;
 }
