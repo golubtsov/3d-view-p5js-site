@@ -1,4 +1,12 @@
 {
+  "name": "3d-view-p5js-site",
+  "description": "3D with p5.js",
+  "version": "1.0.0",
+  "scripts": {
+    "tailwind": "npx tailwindcss -i ./static/css/style.css -o ./static/css/output.css --watch"
+  },
+  "author": "",
+  "license": "MIT",
   "devDependencies": {
     "tailwindcss": "^3.4.0"
   }
